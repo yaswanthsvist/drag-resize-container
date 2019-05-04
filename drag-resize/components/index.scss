@@ -1,0 +1,47 @@
+.rnd-layer {
+}
+.rnd-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  .rnd-header {
+    flex-basis: 24px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #27ae60;
+  }
+  .rnd-container {
+    display: flex;
+    overflow: scroll;
+
+    flex: 1;
+  }
+  .rnd-footer {
+    flex-basis: 24px;
+    background: #27ae60;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+.react-resizable {
+  position: relative;
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%2010%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M8.11172%200.757022C8.19815%200.843449%208.14158%201.04031%207.98601%201.19587L1.19722%207.98466C1.0411%208.14079%200.844803%208.19679%200.758375%208.11037C0.67226%208.02425%200.727951%207.82765%200.88408%207.67152L7.67287%200.882727C7.82843%200.727163%208.02561%200.670907%208.11172%200.757022ZM8.54607%203.45411C8.6325%203.54054%208.57593%203.7374%208.4198%203.89352L3.89431%208.41901C3.73819%208.57514%203.54076%208.63227%203.45433%208.54585C3.36822%208.45973%203.42504%208.26199%203.58117%208.10587L8.10665%203.58038C8.26278%203.42425%208.45995%203.368%208.54607%203.45411ZM8.98098%206.15064C9.06741%206.23706%209.01028%206.43449%208.85471%206.59005L6.59197%208.85279C6.43528%209.00949%206.23898%209.06549%206.15256%208.97906C6.06644%208.89295%206.12213%208.69634%206.27883%208.53965L8.54157%206.27691C8.69713%206.12134%208.89487%206.06452%208.98098%206.15064Z%22%20fill%3D%22%2366778A%22%20stroke%3D%22%23F2F2F2%22%20stroke-width%3D%220.5%22/%3E%3C/svg%3E');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}
